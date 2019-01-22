@@ -1,0 +1,11 @@
+.header {
+  grid-area: header;
+}
+
+.title {
+  color: hsl(0, 0%, 95%);
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 80px;
+  margin-left: 20px;
+}

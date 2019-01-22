@@ -1,0 +1,17 @@
+.editor {
+  grid-area: editor;
+}
+
+.input {
+  border: 0;
+  padding: 10px;
+  resize: none;
+  width: calc(100% - 20px);
+  height: calc(100% - 24px);
+
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; */
+}
