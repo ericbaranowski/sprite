@@ -1,13 +1,22 @@
 import React from 'react'
-
+import MonacoEditor from 'react-monaco-editor'
 import './Editor.css'
 
-const Editor = ({value, onChange, className}) => (
+const options = {
+  automaticLayout: true,
+  autoIndent: true,
+  scrollBeyondLastLine: false,
+  smoothScrolling: true,
+  minimap: {enabled: false}
+}
+
+const Editor = ({value, onChange}) => (
   <div className="editor">
-    <textarea
-      className="input"
+    <MonacoEditor
       value={value}
-      onChange={e => onChange(e.target.value)}
+      onChange={onChange}
+      options={options}
+      theme="vs-dark"
     />
   </div>
 )

@@ -1,13 +1,3 @@
 .editor {
-  grid-area: editor;
-}
-
-.input {
-  border: 0;
-  padding: 10px;
-  resize: none;
-  width: calc(100% - 20px);
-  /* Not quite sure why we need the reduced height. Textareas are weird.
-   * Go figure that out at some point... */
-  height: calc(100% - 24px);
+  height: 100%;
 }

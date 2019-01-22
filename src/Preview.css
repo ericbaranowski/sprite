@@ -2,4 +2,6 @@
   grid-area: preview;
   text-align: center;
   overflow: auto;
+  background: hsl(214, 100%, 95%);
+  height: 100%;
 }

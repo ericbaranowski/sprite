@@ -2,5 +2,12 @@
   "name": "sprite",
   "version": 2,
   "alias": "sprite.timo.codes",
-  "builds": [{"src": "package.json", "use": "@now/static-build"}]
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {"distDir": "build"}
+    }
+  ],
+  "routes": [{"src": "^/(.*)", "dest": "/$1"}]
 }

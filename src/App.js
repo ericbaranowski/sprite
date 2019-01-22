@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import SplitPane from 'react-split-pane'
 import './App.css'
 import Editor from './Editor'
 import Preview from './Preview'
@@ -14,8 +15,12 @@ const App = () => {
   return (
     <div className="app">
       <Header />
-      <Editor value={code} onChange={setCode} />
-      <Preview value={code} />
+      <div className="content">
+        <SplitPane split="vertical" minSize={500} defaultSize="50%">
+          <Editor value={code} onChange={setCode} />
+          <Preview value={code} />
+        </SplitPane>
+      </div>
     </div>
   )
 }
