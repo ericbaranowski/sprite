@@ -1,6 +1,7 @@
 import React from 'react'
 import MonacoEditor from 'react-monaco-editor'
 import './Editor.css'
+import registerMermaidLanguage from './util/MermaidMonaco'
 
 const options = {
   automaticLayout: true,
@@ -16,7 +17,9 @@ const Editor = ({value, onChange}) => (
       value={value}
       onChange={onChange}
       options={options}
-      theme="vs-dark"
+      theme="mermaid-theme"
+      language="mermaid"
+      editorWillMount={monaco => registerMermaidLanguage(monaco)}
     />
   </div>
 )
