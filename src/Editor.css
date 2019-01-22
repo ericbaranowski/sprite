@@ -7,11 +7,7 @@
   padding: 10px;
   resize: none;
   width: calc(100% - 20px);
+  /* Not quite sure why we need the reduced height. Textareas are weird.
+   * Go figure that out at some point... */
   height: calc(100% - 24px);
-
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; */
 }

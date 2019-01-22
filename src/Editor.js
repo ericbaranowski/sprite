@@ -1,11 +1,15 @@
-import React from "react";
+import React from 'react'
 
-import "./Editor.css";
+import './Editor.css'
 
-const Editor = ({ value, onChange, className }) => (
+const Editor = ({value, onChange, className}) => (
   <div className="editor">
-    <textarea className="input" />
+    <textarea
+      className="input"
+      value={value}
+      onChange={e => onChange(e.target.value)}
+    />
   </div>
-);
+)
 
-export default Editor;
+export default Editor

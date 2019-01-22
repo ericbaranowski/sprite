@@ -1,31 +1,33 @@
-import React, { Component } from "react";
-import mermaid from "mermaid";
+import React, {useState, useEffect} from 'react'
+import {mermaidAPI} from 'mermaid'
 
-class Mermaid extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      svg: null
-    };
+import './Mermaid.css'
 
-    mermaid.mermaidAPI.initialize({
-      startOnLoad: false
-    });
-  }
+mermaidAPI.initialize({startOnLoad: false})
 
-  componentDidMount() {
-    mermaid.mermaidAPI.render(this.props.id, this.props.content, svg => {
-      this.setState({ svg });
-    });
-  }
+const Mermaid = ({id, content}) => {
+  const [chart, setChart] = useState(null)
+  const [error, setError] = useState(null)
 
-  render() {
-    if (!this.state.svg) {
-      return <div>Loading...</div>;
-    }
+  useEffect(
+    () => {
+      try {
+        console.log('redrawing')
+        mermaidAPI.parse(content)
+        mermaidAPI.render(id, content, setChart)
+        setError(null)
+      } catch (err) {
+        console.log(err)
+        setChart(null)
+        setError(err.str)
+      }
+    },
+    [id, content]
+  )
 
-    return <div dangerouslySetInnerHTML={{ __html: this.state.svg }} />;
-  }
+  if (error) return <pre className="error">{error}</pre>
+
+  return chart && <div dangerouslySetInnerHTML={{__html: chart}} />
 }
 
-export default Mermaid;
+export default Mermaid
