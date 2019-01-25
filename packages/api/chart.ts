@@ -2,8 +2,27 @@ import {IncomingMessage, ServerResponse} from 'http'
 import {parse} from 'url'
 import getScreenshot from './util/screenshot'
 
-const buildPage = (svg: string) =>
-  `<div id='target' style="background-color: red; padding: 50px;">${svg}</div>`
+const buildPage = (svg: string): string => `
+<head>
+  <style>
+    .container {
+      background-color: white;
+      padding: 50px;
+      display: inline-block;
+    }
+    .container svg {
+      width: 1000px;
+    }
+  </style>
+</head>
+<body>
+  <div id='target' class="mermaid container">
+    ${svg}
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true});</script>
+</body>
+`
 
 const getCodeFromPath = (path: string) => {
   let url = path.slice(7)
@@ -16,7 +35,7 @@ export default async (req: IncomingMessage, res: ServerResponse) => {
   const code = getCodeFromPath(pathname)
   const decoded = Buffer.from(code, 'base64').toString()
 
-  console.log(decoded)
+  // const svg = await render(decoded)
 
   const page = buildPage(decoded)
 
