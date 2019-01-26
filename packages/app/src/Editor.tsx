@@ -8,7 +8,9 @@ const options = {
   autoIndent: true,
   scrollBeyondLastLine: false,
   smoothScrolling: true,
-  minimap: {enabled: false}
+  minimap: {enabled: false},
+  fontFamily: 'Fira Code',
+  fontLigatures: true
 }
 
 interface Props {
