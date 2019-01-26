@@ -50,5 +50,6 @@ export default async (req: IncomingMessage, res: ServerResponse) => {
   const file = await getScreenshot(page, 'target')
   res.statusCode = 200
   res.setHeader('Content-Type', `image/png`)
+  res.setHeader('Cache-Control', 'max-age=60, s-maxage=86400')
   res.end(file)
 }
