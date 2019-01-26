@@ -17,7 +17,7 @@ const App = () => {
     b1-->b2
   end
   
-  subgraph hello world
+  subgraph three
     c1-->c2
   end`)
 

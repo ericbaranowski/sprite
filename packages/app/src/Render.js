@@ -1,7 +1,7 @@
 import React from 'react'
 import './Render.css'
 
-const Render = ({code}) => {
+const Render = ({code, onLoad}) => {
   const encoded = Buffer.from(code).toString('base64')
 
   return (
@@ -9,6 +9,7 @@ const Render = ({code}) => {
       className="render"
       src={`https://sprite.tms.sh/chart/${encoded}`}
       alt="Chart preview"
+      onLoad={onLoad}
     />
   )
 }

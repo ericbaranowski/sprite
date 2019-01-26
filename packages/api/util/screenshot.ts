@@ -21,6 +21,7 @@ const getScreenshot = async (pageContent: string, targetId: string) => {
 
   const file = await page.screenshot({
     type: 'png',
+    omitBackground: true,
     clip: {
       x: rect.left - padding,
       y: rect.top - padding,

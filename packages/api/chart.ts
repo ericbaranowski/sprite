@@ -1,34 +1,38 @@
 import {IncomingMessage, ServerResponse} from 'http'
-import {readFileSync} from 'fs'
 import {parse} from 'url'
 import getScreenshot from './util/screenshot'
 
 const buildPage = (svg: string): string => {
-  // const mermaid = readFileSync('util/mermaid.js', 'utf8');
-
   return `
 <head>
   <style>
     .container {
-      background-color: white;
-      padding: 50px;
       display: inline-block;
+      padding: 40px;
     }
-    .container svg {
+    .background {
+      display: inline-block;
+      padding: 30px;
+      background-color: white;
+      box-shadow: 0 0 30px #333;
+    }
+    .background svg {
       width: 1000px !important;
       max-width: initial !important;
     }
   </style>
 </head>
 <body>
-  <div id='target' class="mermaid container">
-    ${svg}
+  <div id="target" class="container">
+    <div class="background mermaid">
+      ${svg}
+    </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
   <script>mermaid.initialize({startOnLoad:true});</script>
 </body>
 `
-  }
+}
 
 const getCodeFromPath = (path: string) => {
   let url = path.slice(7)
@@ -40,8 +44,6 @@ export default async (req: IncomingMessage, res: ServerResponse) => {
   // const { type = 'png', quality, fullPage } = query;
   const code = getCodeFromPath(pathname)
   const decoded = Buffer.from(code, 'base64').toString()
-
-  // const svg = await render(decoded)
 
   const page = buildPage(decoded)
 
