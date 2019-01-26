@@ -1,7 +1,7 @@
 import React from 'react'
 import MonacoEditor from 'react-monaco-editor'
-import './Editor.css'
 import registerMermaidLanguage from './util/MermaidMonaco'
+import styles from './Editor.module.css'
 
 const options = {
   automaticLayout: true,
@@ -17,7 +17,7 @@ interface Props {
 }
 
 const Editor = ({code, onChange}: Props) => (
-  <div className="editor">
+  <div className={styles.editor}>
     <MonacoEditor
       value={code}
       onChange={onChange}

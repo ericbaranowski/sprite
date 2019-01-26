@@ -1,0 +1,18 @@
+.share {
+  padding: 10px;
+}
+
+.share input {
+  width: 400px;
+  height: calc(100% - 20px);
+  font-size: 20px;
+  background: hsl(220, 13%, 25%);
+  color: hsl(0, 0%, 95%);
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.label {
+  margin-right: 10px;
+}

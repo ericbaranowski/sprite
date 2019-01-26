@@ -1,15 +1,14 @@
 import React from 'react'
-import './Preview.css'
 import Render from './Render'
+import styles from './Preview.module.css'
 
 interface Props {
   code: string
 }
 
 const Preview = ({code}: Props) => {
-
   return (
-    <div className='preview'>
+    <div className={styles.preview}>
       <Render code={code} />
     </div>
   )

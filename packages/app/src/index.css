@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300');
 
-body {
+body,
+input {
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
+  font-family: 'Work Sans', sans-serif;
+  color: hsl(0, 0%, 95%);
 }
 
 h1 {
-  font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   font-size: 50px;
 }

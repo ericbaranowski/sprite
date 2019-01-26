@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import './Render.css'
+import {encode} from './util/code'
+import styles from './Render.module.css'
 
 interface Props {
   code: string
@@ -14,11 +15,11 @@ const Render = ({code}: Props) => {
     [code]
   )
 
-  const encoded = Buffer.from(code).toString('base64')
+  const encoded = encode(code)
 
   return (
     <img
-      className={`render ${loading ? 'loading' : ''}`}
+      className={`${styles.render} ${loading ? styles.loading : ''}`}
       src={`https://sprite.tms.sh/chart/${encoded}`}
       alt="Chart preview"
       onLoad={() => setLoading(false)}

@@ -5,7 +5,12 @@
   flex-direction: column;
 }
 
-.content {
+.body {
   flex: 1;
   position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
 }

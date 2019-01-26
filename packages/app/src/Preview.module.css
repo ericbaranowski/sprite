@@ -1,5 +1,6 @@
 .preview {
-  grid-area: preview;
+  flex: 1;
+
   text-align: center;
   overflow: auto;
   height: 100%;
@@ -25,4 +26,3 @@
   padding: 20px;
   background-position: 0 0, 15px 15px;
 }
-
