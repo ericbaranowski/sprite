@@ -1,4 +1,9 @@
 .render {
   width: 100%;
   max-width: 1000px;
+
+  transition: all .2s;
+}
+.loading {
+  filter: grayscale(60%) blur(2px);
 }

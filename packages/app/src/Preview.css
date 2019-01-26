@@ -24,12 +24,5 @@
   background-size: 30px 30px;
   padding: 20px;
   background-position: 0 0, 15px 15px;
-  transition: filter 0.3s;
 }
-.loading {
-  filter: blur(2px);
-}
-.loading::before {
-  content: ' ';
-  background: hsla(0, 0%, 100%, 0.5);
-}
+

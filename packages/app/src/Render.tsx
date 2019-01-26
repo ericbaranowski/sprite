@@ -1,19 +1,27 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './Render.css'
 
 interface Props {
   code: string
-  onLoad: () => void
 }
-const Render = ({code, onLoad}: Props) => {
+const Render = ({code}: Props) => {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(
+    () => {
+      setLoading(true)
+    },
+    [code]
+  )
+
   const encoded = Buffer.from(code).toString('base64')
 
   return (
     <img
-      className="render"
+      className={`render ${loading ? 'loading' : ''}`}
       src={`https://sprite.tms.sh/chart/${encoded}`}
       alt="Chart preview"
-      onLoad={onLoad}
+      onLoad={() => setLoading(false)}
     />
   )
 }
