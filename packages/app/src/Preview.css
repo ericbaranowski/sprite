@@ -2,6 +2,26 @@
   grid-area: preview;
   text-align: center;
   overflow: auto;
-  background: hsl(214, 100%, 95%);
   height: 100%;
+
+  background-color: #fafafa;
+  background-image: linear-gradient(
+      45deg,
+      #eaeaea 25%,
+      transparent 25%,
+      transparent 75%,
+      #eaeaea 75%,
+      #eaeaea
+    ),
+    linear-gradient(
+      45deg,
+      #eaeaea 25%,
+      transparent 25%,
+      transparent 75%,
+      #eaeaea 75%,
+      #eaeaea
+    );
+  background-size: 60px 60px;
+  padding: 20px;
+  background-position: 0 0, 30px 30px;
 }

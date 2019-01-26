@@ -7,16 +7,19 @@ import Header from './Header'
 
 const App = () => {
   const [code, setCode] = useState(`graph TB
-    c1-->a2
-    subgraph one
+  c1-->a2
+
+  subgraph one
     a1-->a2
-    end
-    subgraph two
+  end
+
+  subgraph two
     b1-->b2
-    end
-    subgraph three
+  end
+  
+  subgraph hello world
     c1-->c2
-    end`)
+  end`)
 
   return (
     <div className="app">

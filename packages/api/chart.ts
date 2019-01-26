@@ -1,8 +1,12 @@
 import {IncomingMessage, ServerResponse} from 'http'
+import {readFileSync} from 'fs'
 import {parse} from 'url'
 import getScreenshot from './util/screenshot'
 
-const buildPage = (svg: string): string => `
+const buildPage = (svg: string): string => {
+  // const mermaid = readFileSync('util/mermaid.js', 'utf8');
+
+  return `
 <head>
   <style>
     .container {
@@ -11,7 +15,8 @@ const buildPage = (svg: string): string => `
       display: inline-block;
     }
     .container svg {
-      width: 1000px;
+      width: 1000px !important;
+      max-width: initial !important;
     }
   </style>
 </head>
@@ -23,6 +28,7 @@ const buildPage = (svg: string): string => `
   <script>mermaid.initialize({startOnLoad:true});</script>
 </body>
 `
+  }
 
 const getCodeFromPath = (path: string) => {
   let url = path.slice(7)
