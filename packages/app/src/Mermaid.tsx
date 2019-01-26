@@ -1,20 +1,25 @@
 import React, {useState, useEffect} from 'react'
-import {mermaidAPI} from 'mermaid'
+import mermaid from 'mermaid'
 
 import './Mermaid.css'
 
-mermaidAPI.initialize({startOnLoad: false})
+mermaid.mermaidAPI.initalize({startOnLoad: false})
 
-const Mermaid = ({id, content}) => {
-  const [chart, setChart] = useState(null)
-  const [error, setError] = useState(null)
+interface Props {
+  id: string
+  content: string
+}
+
+const Mermaid = ({id, content}: Props) => {
+  const [chart, setChart] = useState<string | null>(null)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(
     () => {
       try {
         console.log('redrawing')
-        mermaidAPI.parse(content)
-        mermaidAPI.render(id, content, setChart)
+        mermaid.mermaidAPI.parse(content)
+        mermaid.mermaidAPI.render(id, content, setChart)
         setError(null)
       } catch (err) {
         console.log(err)

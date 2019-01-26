@@ -2,20 +2,23 @@ import React, {useState, useEffect} from 'react'
 import './Preview.css'
 import Render from './Render'
 
-const Preview = ({value}) => {
+interface Props {
+  code: string
+}
+
+const Preview = ({code}: Props) => {
   const [loading, setLoading] = useState(true)
 
   useEffect(
     () => {
       setLoading(true)
     },
-    [value]
+    [code]
   )
 
   return (
     <div className={`preview ${loading ? 'loading' : ''}`}>
-      {/* <Mermaid id="foo" content={value} /> */}
-      <Render code={value} onLoad={() => setLoading(false)} />
+      <Render code={code} onLoad={() => setLoading(false)} />
     </div>
   )
 }

@@ -12,7 +12,7 @@ const Brown = 'AB7967'
 const Gray = '666666'
 const White = 'EEEEEE'
 
-const register = monaco => {
+const register = (monaco) => {
   monaco.languages.register({id: 'mermaid'})
 
   monaco.languages.setMonarchTokensProvider('mermaid', {

@@ -1,7 +1,11 @@
 import React from 'react'
 import './Render.css'
 
-const Render = ({code, onLoad}) => {
+interface Props {
+  code: string
+  onLoad: () => void
+}
+const Render = ({code, onLoad}: Props) => {
   const encoded = Buffer.from(code).toString('base64')
 
   return (

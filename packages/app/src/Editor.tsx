@@ -11,15 +11,20 @@ const options = {
   minimap: {enabled: false}
 }
 
-const Editor = ({value, onChange}) => (
+interface Props {
+  code: string
+  onChange: (value: string) => void
+}
+
+const Editor = ({code, onChange}: Props) => (
   <div className="editor">
     <MonacoEditor
-      value={value}
+      value={code}
       onChange={onChange}
       options={options}
       theme="mermaid-theme"
       language="mermaid"
-      editorWillMount={monaco => registerMermaidLanguage(monaco)}
+      editorWillMount={registerMermaidLanguage}
     />
   </div>
 )

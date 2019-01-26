@@ -26,8 +26,8 @@ const App = () => {
       <Header />
       <div className="content">
         <SplitPane split="vertical" minSize={500} defaultSize="50%">
-          <Editor value={code} onChange={setCode} />
-          <Preview value={code} />
+          <Editor code={code} onChange={setCode} />
+          <Preview code={code} />
         </SplitPane>
       </div>
     </div>
