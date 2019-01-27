@@ -7,7 +7,9 @@
 <br /><br />
 
 <div align="center">
-  <img width="400px" margin="40px" src="assets/logo.png" />
+  <a href="https://sprite.link">
+    <img width="400px" margin="40px" src="assets/logo.png" />
+  </a>
 
   Draw charts with code. Render in real-time. Embed anywhere as .png. <strong><a href="https://sprite.link">Open Sprite.</a></strong>
 </div>
