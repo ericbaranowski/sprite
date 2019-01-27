@@ -10,6 +10,8 @@
   <strong>Sprite.</strong> Draw charts with code. Render in real-time. Embed anywhere as .png.
 </div>
 
+---
+
 <div align="center">
   <!-- Stability -->
   <a href="https://nodejs.org/api/documentation.html#documentation_stability_index">
