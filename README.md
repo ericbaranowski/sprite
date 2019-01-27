@@ -32,7 +32,9 @@
   <sub>Built with ❤ by <a href="https://twitter.com/TimoStaudinger">Timo M. Staudinger</a> and <a href="https://github.com/TimoSta/sprite/graphs/contributors">contributors</a>.</sub>
 </div>
 
-<div align="center">  
+<br />
+
+<div align="center">
   <a href="https://deploy.now.sh/?repo=https://github.com/TimoSta/sprite">
     <img src="https://deploy.now.sh/static/button.svg" alt="Deploy to now" />
   </a></div>
