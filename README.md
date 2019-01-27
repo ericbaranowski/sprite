@@ -17,7 +17,7 @@
       alt="API stability" />
   </a>
   <!-- Build Status -->
-  <a href="https://travis-ci.org/TimoSta/kartograf">
+  <a href="https://travis-ci.org/TimoSta/sprite">
     <img src="https://img.shields.io/travis/TimoSta/sprite/master.svg?style=flat-square"
       alt="Build Status" />
   </a>
