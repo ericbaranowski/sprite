@@ -1,5 +1,7 @@
 <div align="center">
-  <img width="800px" src="assets/screenshot.png" />
+  <a href="https://sprite.link">
+    <img width="800px" src="assets/screenshot.png" />
+  </a>
 </div>
 
 <br /><br />
@@ -7,7 +9,7 @@
 <div align="center">
   <img width="400px" margin="40px" src="assets/logo.png" />
 
-  Draw charts with code. Render in real-time. Embed anywhere as .png.
+  Draw charts with code. Render in real-time. Embed anywhere as .png. <strong><a href="https://sprite.link">Open Sprite.</a></strong>
 </div>
 
 ---
@@ -29,9 +31,9 @@
 <div align="center">
   <sub>Built with ❤ by <a href="https://twitter.com/TimoStaudinger">Timo M. Staudinger</a> and <a href="https://github.com/TimoSta/sprite/graphs/contributors">contributors</a>.
     
-  <br /><br />
+  <br />
   
-  <div font-size="20px">Try the app at <strong><a href="https://sprite.link">sprite.link</a></strong> or <a href="https://deploy.now.sh/?repo=https://github.com/TimoSta/sprite">
+  <a href="https://deploy.now.sh/?repo=https://github.com/TimoSta/sprite">
     <img src="https://deploy.now.sh/static/button.svg" alt="Deploy to now" />
   </a></div>
 </div>
