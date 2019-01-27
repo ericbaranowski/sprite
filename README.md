@@ -16,8 +16,12 @@
     <img src="https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square"
       alt="API stability" />
   </a>
-  <img alt="Uptime" src="https://img.shields.io/uptimerobot/ratio/m781849123-c9eca0ba5a53d00f06ac8b5d.svg?style=flat-square">
-  <img alt="License" src="https://img.shields.io/github/license/TimoSta/sprite.svg?style=flat-square">
+  <a href="https://status.sprite.link/">
+    <img alt="Uptime" src="https://img.shields.io/uptimerobot/ratio/m781849123-c9eca0ba5a53d00f06ac8b5d.svg?style=flat-square">
+  </a>
+  <a href="https://github.com/TimoSta/sprite/blob/master/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/TimoSta/sprite.svg?style=flat-square">
+  </a>
 </div>
 
 <div align="center">
