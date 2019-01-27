@@ -31,7 +31,7 @@
     
   <br /><br />
     
-  <a href="https://deploy.now.sh/?repo=https://github.com/zpnk/hello-world">
+  <a href="https://deploy.now.sh/?repo=https://github.com/TimoSta/sprite">
     <img src="https://deploy.now.sh/static/button.svg" alt="Deploy to now" />
   </a>
 </div>
