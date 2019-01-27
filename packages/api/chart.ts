@@ -36,19 +36,19 @@ const buildPage = (svg: string): string => {
 
 /**
  * Turns
- *   /chart/foo.png
+ *   /chart/foo%20bar.png
  * into
- *   foo
+ *   foo bar
  */
-const getCodeFromPath = (path: string) => path.slice(7, -4)
+const getCodeFromPath = (path: string) =>
+  Buffer.from(decodeURIComponent(path.slice(7, -4)), 'base64').toString()
 
 export default async (req: IncomingMessage, res: ServerResponse) => {
   const {pathname} = parse(req.url, true)
   // const { type = 'png', quality, fullPage } = query;
   const code = getCodeFromPath(pathname)
-  const decoded = Buffer.from(code, 'base64').toString()
 
-  const page = buildPage(decoded)
+  const page = buildPage(code)
 
   const file = await getScreenshot(page, 'target')
   res.statusCode = 200

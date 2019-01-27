@@ -1,1 +1,2 @@
-export const encode = (code: string) => Buffer.from(code).toString('base64')
+export const encode = (code: string) =>
+  encodeURIComponent(Buffer.from(code).toString('base64'))
