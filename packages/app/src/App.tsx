@@ -6,31 +6,33 @@ import Header from './Header'
 import Share from './Share'
 
 import styles from './App.module.css'
+import Help from './Help'
 
 const App = () => {
   const [code, setCode] = useState(`graph TB
   start(Start)
 
-  start --> login[Login]
+  start ==> login[Login]
   
-  login --> auth{Authorized?}
+  login ==> auth{Authorized?}
 
-  auth --> tooManyTries{Attempted 3 times?}
-  auth --> granted[Access granted]
+  auth -- No  --> tooManyTries{Attempted 3 times?}
+  auth == Yes ==> granted[Access granted]
 
-  tooManyTries --> login
+  granted ==> exit{Exit module?}
 
-  granted --> exit{Exit module?}
+  exit -- No  --> granted
+  exit == Yes ==> finish(End)
 
-  exit --> granted
-  exit --> finish(Start)
-
-  tooManyTries --> finish`)
+  tooManyTries -- No  --> login
+  tooManyTries -- Yes --> finish
+`)
 
   return (
     <div className={styles.app}>
       <div className={styles.header}>
         <Header />
+        <Help />
         <Share code={code} />
       </div>
       <div className={styles.body}>

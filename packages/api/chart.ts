@@ -34,13 +34,16 @@ const buildPage = (svg: string): string => {
 `
 }
 
-const getCodeFromPath = (path: string) => {
-  let url = path.slice(7)
-  return url
-}
+/**
+ * Turns
+ *   /chart/foo.png
+ * into
+ *   foo
+ */
+const getCodeFromPath = (path: string) => path.slice(7, -4)
 
 export default async (req: IncomingMessage, res: ServerResponse) => {
-  const {pathname = '/', query = {}} = parse(req.url, true)
+  const {pathname} = parse(req.url, true)
   // const { type = 'png', quality, fullPage } = query;
   const code = getCodeFromPath(pathname)
   const decoded = Buffer.from(code, 'base64').toString()
