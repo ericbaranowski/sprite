@@ -2,7 +2,7 @@
   <img width="800px" src="assets/screenshot.png" />
 </div>
 
-<br />
+<br /><br />
 
 <div align="center">
   <img width="400px" margin="40px" src="assets/logo.png" />
@@ -31,7 +31,7 @@
     
   <br /><br />
   
-  <strong><a href="https://sprite.link">sprite.link</a></strong>
+  <h3>Try the app at <strong><a href="https://sprite.link">sprite.link</a></strong></h3>
   
   <br />
   
