@@ -1,6 +1,6 @@
 .help {
-  margin-right: 40px;
   display: flex;
+  text-align: right;
 }
 
 .help a {

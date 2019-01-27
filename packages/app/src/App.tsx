@@ -28,15 +28,21 @@ const App = () => {
   tooManyTries -- Yes --> finish
 `)
 
+  const isPortrait = window.innerHeight > window.innerWidth
+
   return (
     <div className={styles.app}>
       <div className={styles.header}>
         <Header />
         <Help />
-        <Share code={code} />
+        {!isPortrait && <Share code={code} />}
       </div>
       <div className={styles.body}>
-        <SplitPane split="vertical" minSize={500} defaultSize="50%">
+        <SplitPane
+          split={isPortrait ? 'horizontal' : 'vertical'}
+          minSize={500}
+          defaultSize="50%"
+        >
           <Editor code={code} onChange={setCode} />
           <Preview code={code} />
         </SplitPane>
