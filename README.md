@@ -25,5 +25,11 @@
 </div>
 
 <div align="center">
-  <sub>Built with 🖤 by <a href="https://twitter.com/TimoStaudinger">Timo M. Staudinger</a> and <a href="https://github.com/TimoSta/sprite/graphs/contributors">contributors</a>.
+  <sub>Built with ❤ by <a href="https://twitter.com/TimoStaudinger">Timo M. Staudinger</a> and <a href="https://github.com/TimoSta/sprite/graphs/contributors">contributors</a>.
+    
+  <br /><br />
+    
+  <a href="https://deploy.now.sh/?repo=https://github.com/zpnk/hello-world">
+    <img src="https://deploy.now.sh/static/button.svg" alt="Deploy to now" />
+  </a>
 </div>
