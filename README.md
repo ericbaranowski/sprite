@@ -7,7 +7,7 @@
 <div align="center">
   <h3><a href="https://sprite.link">sprite.link</a> · <a href="https://beta.sprite.link">beta.sprite.link</a></h3>
 
-  <strong>Sprite.</strong> Draw charts with code. Render in real-time. Embed anywhere as .png.
+  <strong>🖌 Sprite.</strong> Draw charts with code. Render in real-time. Embed anywhere as .png.
 </div>
 
 ---
