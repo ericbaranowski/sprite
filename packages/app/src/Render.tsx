@@ -20,7 +20,7 @@ const Render = ({code}: Props) => {
   return (
     <img
       className={`${styles.render} ${loading ? styles.loading : ''}`}
-      src={`/chart/${encoded}`}
+      src={`/chart/${encoded}.png`}
       alt="Chart preview"
       onLoad={() => setLoading(false)}
     />

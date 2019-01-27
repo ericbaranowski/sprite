@@ -21,7 +21,7 @@ const Share = ({code}: Props) => {
       <input
         id="shareLink"
         readOnly
-        value={`${domain}/chart/${encode(code)}`}
+        value={`${domain}/chart/${encode(code)}.png`}
         ref={inputEl}
         onFocus={() => inputEl.current && inputEl.current.select()}
       />

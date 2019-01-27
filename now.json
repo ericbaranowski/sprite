@@ -15,7 +15,7 @@
     }
   ],
   "routes": [
-    {"src": "^/chart(/.*)?", "dest": "/packages/api/chart.ts"},
+    {"src": "^/chart/.*\\.png?", "dest": "/packages/api/chart.ts"},
     {"src": "^/(.*)", "dest": "/packages/app/$1"}
   ]
 }
