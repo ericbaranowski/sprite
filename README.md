@@ -31,11 +31,7 @@
     
   <br /><br />
   
-  <h3>Try the app at <strong><a href="https://sprite.link">sprite.link</a></strong></h3>
-  
-  <br />
-  
-  <a href="https://deploy.now.sh/?repo=https://github.com/TimoSta/sprite">
+  <div font-size="20px">Try the app at <strong><a href="https://sprite.link">sprite.link</a></strong> or <a href="https://deploy.now.sh/?repo=https://github.com/TimoSta/sprite">
     <img src="https://deploy.now.sh/static/button.svg" alt="Deploy to now" />
-  </a>
+  </a></div>
 </div>
