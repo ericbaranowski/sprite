@@ -10,7 +10,7 @@
     },
     {
       "src": "packages/api/chart.ts",
-      "use": "@now/node@canary",
+      "use": "@now/node",
       "config": {"maxLambdaSize": "40mb"}
     }
   ],
