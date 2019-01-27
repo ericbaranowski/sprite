@@ -5,9 +5,9 @@
 <br />
 
 <div align="center">
-  <h3><a href="https://sprite.link">sprite.link</a> · <a href="https://beta.sprite.link">beta.sprite.link</a></h3>
+  <img width="400px" margin="40px" src="assets/logo.png" />
 
-  <strong>🖌 Sprite.</strong> Draw charts with code. Render in real-time. Embed anywhere as .png.
+  Draw charts with code. Render in real-time. Embed anywhere as .png.
 </div>
 
 ---
@@ -30,7 +30,11 @@
   <sub>Built with ❤ by <a href="https://twitter.com/TimoStaudinger">Timo M. Staudinger</a> and <a href="https://github.com/TimoSta/sprite/graphs/contributors">contributors</a>.
     
   <br /><br />
-    
+  
+  <strong><a href="https://sprite.link">sprite.link</a></strong>
+  
+  <br />
+  
   <a href="https://deploy.now.sh/?repo=https://github.com/TimoSta/sprite">
     <img src="https://deploy.now.sh/static/button.svg" alt="Deploy to now" />
   </a>
