@@ -9,19 +9,23 @@ import styles from './App.module.css'
 
 const App = () => {
   const [code, setCode] = useState(`graph TB
-  c1-->a2
+  start(Start)
 
-  subgraph one
-    a1-->a2
-  end
-
-  subgraph two
-    b1-->b2
-  end
+  start --> login[Login]
   
-  subgraph three
-    c1-->c2
-  end`)
+  login --> auth{Authorized?}
+
+  auth --> tooManyTries{Attempted 3 times?}
+  auth --> granted[Access granted]
+
+  tooManyTries --> login
+
+  granted --> exit{Exit module?}
+
+  exit --> granted
+  exit --> finish(Start)
+
+  tooManyTries --> finish`)
 
   return (
     <div className={styles.app}>

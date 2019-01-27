@@ -20,7 +20,7 @@ const Render = ({code}: Props) => {
   return (
     <img
       className={`${styles.render} ${loading ? styles.loading : ''}`}
-      src={`https://sprite.tms.sh/chart/${encoded}`}
+      src={`/chart/${encoded}`}
       alt="Chart preview"
       onLoad={() => setLoading(false)}
     />

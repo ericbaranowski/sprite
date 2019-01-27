@@ -6,7 +6,7 @@
   width: 400px;
   height: calc(100% - 20px);
   font-size: 20px;
-  background: hsl(220, 13%, 25%);
+  background: #2e3440;
   color: hsl(0, 0%, 95%);
   border: none;
   padding: 10px;

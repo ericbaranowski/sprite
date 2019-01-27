@@ -2,6 +2,10 @@ import React, {useRef} from 'react'
 import {encode} from './util/code'
 import styles from './Share.module.css'
 
+const domain = `${location.protocol}//${location.hostname}${
+  location.port ? `:${location.port}` : ''
+}`
+
 interface Props {
   code: string
 }
@@ -17,7 +21,7 @@ const Share = ({code}: Props) => {
       <input
         id="shareLink"
         readOnly
-        value={`https://sprite.tms.sh/chart/${encode(code)}`}
+        value={`${domain}/chart/${encode(code)}`}
         ref={inputEl}
         onFocus={() => inputEl.current && inputEl.current.select()}
       />
