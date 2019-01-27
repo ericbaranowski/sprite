@@ -1,7 +1,7 @@
 {
   "name": "sprite",
   "version": 2,
-  "alias": ["sprite.timostaudinger.com", "sprite.timo.codes", "sprite.tms.sh"],
+  "alias": ["sprite.link", "sprite.tms.sh"],
   "builds": [
     {
       "src": "packages/app/package.json",
