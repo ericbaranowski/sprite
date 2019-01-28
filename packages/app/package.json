@@ -9,6 +9,7 @@
     "@types/react": "^16.7.21",
     "@types/react-dom": "^16.0.11",
     "mermaid": "^8.0.0",
+    "mobile-detect": "^1.4.3",
     "react": "^16.8.0-alpha.1",
     "react-dom": "^16.8.0-alpha.1",
     "react-monaco-editor": "^0.22.0",
