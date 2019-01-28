@@ -6,12 +6,16 @@ input {
   margin: 0;
   padding: 0;
   font-family: 'Work Sans', sans-serif;
-  color: hsl(0, 0%, 95%);
+  color: #d8dee9;
 }
 
 h1 {
   font-weight: 300;
   font-size: 50px;
+}
+
+a {
+  color: #d8dee9;
 }
 
 .Resizer {

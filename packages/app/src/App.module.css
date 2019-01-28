@@ -39,14 +39,9 @@
   z-index: 9999;
 }
 
-.dialog a {
-  color: hsl(0, 0%, 95%);
-}
-
 .dialog button {
   font-size: 30px;
   background: #2e3440;
-  color: hsl(0, 0%, 95%);
   padding: 20px;
   border-radius: 8px;
   border: none;
