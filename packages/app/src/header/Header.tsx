@@ -4,6 +4,7 @@ import Title from './Title'
 import Help from './Help'
 import Share from './Share'
 import styles from './Header.module.css'
+import Links from './Links'
 
 interface Props {
   code: string
@@ -16,6 +17,7 @@ const Header = ({code}: Props) => {
     <header className={styles.header}>
       <Title />
       {!isMobile && <Help />}
+      <Links />
       {!isMobile && <Share code={code} />}
     </header>
   )
