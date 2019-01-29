@@ -3,7 +3,7 @@
     <img width="400px" margin="40px" src="assets/logo.png" />
   </a>
   
-  <br /><br /><br />
+  <br /><br />
     
   <a href="https://sprite.link">
     <img width="800px" src="assets/screenshot.png" />
