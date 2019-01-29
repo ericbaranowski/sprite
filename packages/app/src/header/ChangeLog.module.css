@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+}
+
+.unreadMarker {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  background-color: #c4404d;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}

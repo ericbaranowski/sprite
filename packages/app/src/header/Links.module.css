@@ -10,6 +10,6 @@
   cursor: pointer;
 }
 
-.item:last-of-type {
+.item:last-child {
   margin-right: 0;
 }
