@@ -1,5 +1,11 @@
 <div align="center">
   <a href="https://sprite.link">
+    <img width="400px" margin="40px" src="assets/logo.png" />
+  </a>
+  
+  <br /><br /><br />
+    
+  <a href="https://sprite.link">
     <img width="800px" src="assets/screenshot.png" />
   </a>
 </div>
@@ -7,10 +13,6 @@
 <br /><br />
 
 <div align="center">
-  <a href="https://sprite.link">
-    <img width="400px" margin="40px" src="assets/logo.png" />
-  </a>
-
   Draw charts with code. Render in real-time. Embed anywhere as .png. <strong><a href="https://sprite.link">Open Sprite.</a></strong>
 </div>
 
