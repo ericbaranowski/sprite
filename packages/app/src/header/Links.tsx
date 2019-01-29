@@ -2,6 +2,7 @@ import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub, faTwitter} from '@fortawesome/free-brands-svg-icons'
 import styles from './Links.module.css'
+import ChangeLog from './ChangeLog'
 
 const Links = () => (
   <div className={styles.links}>
@@ -21,6 +22,8 @@ const Links = () => (
     >
       <FontAwesomeIcon icon={faTwitter} />
     </a>
+
+    <ChangeLog className={styles.item} />
   </div>
 )
 
