@@ -1,6 +1,6 @@
 import React from 'react'
 import MonacoEditor from 'react-monaco-editor'
-import registerMermaidLanguage from './util/MermaidMonaco'
+import registerMermaidLanguage from '../util/MermaidMonaco'
 import styles from './Editor.module.css'
 
 const options = {

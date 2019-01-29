@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {encode} from './util/code'
+import {encode} from '../util/code'
 import styles from './Render.module.css'
 
 interface Props {

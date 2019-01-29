@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import {encode} from './util/code'
+import {encode} from '../util/code'
 import styles from './Share.module.css'
 
 const domain = `${location.protocol}//${location.hostname}${
