@@ -14,8 +14,17 @@ h1 {
   font-size: 50px;
 }
 
-a {
+a,
+button {
   color: #d8dee9;
+}
+
+button {
+  font-size: 20px;
+  background: #2e3440;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
 }
 
 .Resizer {

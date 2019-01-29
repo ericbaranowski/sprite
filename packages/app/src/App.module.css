@@ -40,11 +40,6 @@
 }
 
 .dialog button {
-  font-size: 30px;
-  background: #2e3440;
-  padding: 20px;
-  border-radius: 8px;
-  border: none;
   margin-top: 50px;
   width: 100%;
 }
