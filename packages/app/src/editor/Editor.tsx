@@ -1,6 +1,8 @@
 import React from 'react'
 import MonacoEditor from 'react-monaco-editor'
-import registerMermaidLanguage from '../util/MermaidMonaco'
+import registerMermaidLanguage from './MermaidMonaco'
+
+import './dm.css'
 import styles from './Editor.module.css'
 
 const options = {
@@ -9,8 +11,8 @@ const options = {
   scrollBeyondLastLine: false,
   smoothScrolling: true,
   minimap: {enabled: false},
-  fontFamily: 'Fira Code',
-  fontLigatures: true
+  fontFamily: 'dm',
+  fontLigatures: false
 }
 
 interface Props {
