@@ -3,13 +3,10 @@
   margin-left: 40px;
 }
 
-.item {
-  margin: auto;
-  font-size: 30px;
-  margin-right: 20px;
-  cursor: pointer;
+.link {
+  margin-right: 20px !important;
 }
 
-.item:last-of-type {
-  margin-right: 0;
+.link:last-of-type {
+  margin-right: 0 !important;
 }

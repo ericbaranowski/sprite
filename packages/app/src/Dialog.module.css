@@ -3,7 +3,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: calc(100% - 80px);
+  width: 800px;
+  max-width: calc(100% - 80px);
 
   background: #4c566a;
 
@@ -25,4 +26,5 @@
 .dialog button {
   margin-top: 50px;
   width: 100%;
+  cursor: pointer;
 }
