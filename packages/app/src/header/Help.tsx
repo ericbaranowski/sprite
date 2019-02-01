@@ -40,7 +40,8 @@ const Help = () => {
             for giving us permission to use the Dank Mono font.{' '}
             <a href="https://dank.sh/" target="_new">
               Go check it out!
-            </a>
+            </a>{' '}
+            👩‍💻
           </p>
           <button onClick={() => setShowHelpDialog(false)}>Close</button>
         </Dialog>

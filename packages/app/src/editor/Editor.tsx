@@ -2,7 +2,7 @@ import React from 'react'
 import MonacoEditor from 'react-monaco-editor'
 import registerMermaidLanguage from './MermaidMonaco'
 
-import './dm.css'
+import './dm/dm.css'
 import styles from './Editor.module.css'
 
 const options = {

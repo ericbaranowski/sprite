@@ -8,22 +8,28 @@ import MobileWarning from './MobileWarning'
 import styles from './App.module.css'
 
 const defaultCode = `graph TB
-  start(Start)
+  start(Start) ==> login[Login]
 
-  start ==> login[Login]
+  subgraph Authorization
+    login[Login]
+    login ==> auth?{authorized?}
 
-  login ==> auth{Authorized?}
+    auth? -- No --> tooManyTries?{attempted 3 times?}
+  end
 
-  auth -- No  --> tooManyTries{Attempted 3 times?}
-  auth == Yes ==> granted[Access granted]
+  auth? == Yes ==> access
 
-  granted ==> exit{Exit module?}
+  subgraph Internal
+    access[Access granted]
 
-  exit -- No  --> granted
-  exit == Yes ==> finish(End)
+    access ==> exit?{exit module?}
+  end
 
-  tooManyTries -- No  --> login
-  tooManyTries -- Yes --> finish
+  exit? -- No  --> access
+  exit? == Yes ==> finish(End)
+
+  tooManyTries? -- No  --> login
+  tooManyTries? -- Yes --> finish
 `
 
 const App = () => {

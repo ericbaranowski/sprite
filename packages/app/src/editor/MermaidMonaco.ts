@@ -55,7 +55,7 @@ const register = (monaco: any) => {
       {token: 'identifier'},
       {token: 'line-terminator', foreground: Gray},
       {token: 'bracket', foreground: Orange},
-      {token: 'label', foreground: Green}
+      {token: 'label', foreground: Green, fontStyle: 'italic'}
     ],
     colors: {
       focusBorder: '#3b4252',
