@@ -1,4 +1,4 @@
-import chrome from 'chrome-aws-lambda'
+import * as chrome from 'chrome-aws-lambda'
 import * as puppeteer from 'puppeteer-core'
 
 const padding = 0

@@ -2,6 +2,7 @@ import React, {useRef} from 'react'
 import {encode} from '../util/code'
 import styles from './Share.module.css'
 
+const {location} = window
 const domain = `${location.protocol}//${location.hostname}${
   location.port ? `:${location.port}` : ''
 }`

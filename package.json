@@ -10,6 +10,6 @@
     "deploy": "now && now alias"
   },
   "devDependencies": {
-    "lerna": "^3.10.7"
+    "lerna": "^3.15.0"
   }
 }
