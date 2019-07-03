@@ -39,7 +39,7 @@
 <br />
 
 <div align="center">
-  <a href="https://deploy.now.sh/?repo=https://github.com/TimoSta/sprite">
+  <a href="https://deploy.now.sh/?repo=https://github.com/ericbaranowski/sprite">
     <img src="https://deploy.now.sh/static/button.svg" alt="Deploy to now" />
   </a></div>
 </div>
