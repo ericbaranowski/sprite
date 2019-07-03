@@ -1,12 +1,12 @@
 {
   "name": "sprite-redirect",
   "version": 2,
-  "alias": ["sprite.tms.sh", "sprite.timo.codes", "sprite.timostaudinger.com"],
+  "alias": ["sprite.ericbaranowski.com", "code2flow.doteric.com", "code2flow.kulado.com"],
   "routes": [
     {
       "src": "/(.*)",
       "status": 301,
-      "headers": {"Location": "https://sprite.link/$1"}
+      "headers": {"Location": "https://code2flow.kulado.com/$1"}
     }
   ]
 }
