@@ -1,6 +1,6 @@
 {
   "name": "code2flow",
-  "version": 2,
+  "version": 1,
   "alias": ["code2flow.kulado.com"],
   "builds": [
     {
